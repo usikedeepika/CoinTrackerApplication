@@ -1,0 +1,64 @@
+<!-- <html>
+    <body>
+      <div id="mydiv"></div>
+      <table id="table"></table>
+
+
+        <script src="index.js"></script>
+
+    </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Tracker</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        input, button {
+            margin: 10px;
+            padding: 5px 10px;
+        }
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="searchInput" placeholder="Search by name or symbol">
+        <button id="searchBtn">Search</button>
+        <button id="sortMarketCapBtn">Sort by Market Cap</button>
+        <button id="sortChangeBtn">Sort by Percentage Change</button>
+    </div>
+    <table id="table">
+        <!-- <thead>
+            <tr>
+                <th>ID</th>
+                <th>Symbol</th>
+                <th>Current Price ($)</th>
+                <th>Total Volume</th>
+                <th>Percentage</th>
+                <th>Market Cap</th>
+            </tr>
+        </thead> -->
+        <tbody id="tableBody"></tbody>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>
