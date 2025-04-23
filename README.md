@@ -9,3 +9,5 @@ Created a search button to filter the data based on user input.
 Created a sort button to sort the data based on market cap and percentage change.
 
 Url of the used Api: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false
+
+Deployment Link: https://usikedeepika.github.io/CoinTrackerApplication/
