@@ -38,7 +38,7 @@ function renderTable(dataToRender) {
             <td>${(item.symbol).toUpperCase()}</td>
             <td>${item.current_price}</td>
             <td>${item.total_volume}</td>
-            <td>${item.price_change_percentage_24h}</td>
+            <td>${item.price_change_percentage_24h}%</td>
             <td>Mkr Cap: ${item.market_cap}</td>
         `;
         tableBody.appendChild(row);
