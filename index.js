@@ -1,48 +1,3 @@
-// var data = [];
-
-// async function fetchData() {
-//     try {
-//         let response = await fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false");
-//         data = await response.json();
-//         populateTable(); // Call this function after the data is fetched
-//     } catch (e) {
-//         console.log(e);
-//     }
-// }
-
-// function populateTable() {
-//     let mytable = document.getElementById("table");
-//     mytable.style.border = "2px solid black";
-//     mytable.style.width = "400px";
-//     mytable.style.height = "400px";
-
-//     for (let i of data) {
-//         let row = document.createElement("tr");
-
-//         let col1 = document.createElement("td");
-//         let col2 = document.createElement("td");
-//         let col3 = document.createElement("td");
-//         let col4 = document.createElement("td");
-
-
-//         col1.innerHTML = `<img src="${i.image}"  width="20" alt ="image"> ${i.id}`;
-//         col2.textContent = `${i.symbol}`; // Symbol
-//         col3.textContent = `${i.current_price}`; // Image
-//         col4.textContent = `${i.total_volume}`; // Current Price
-       
-
-//         row.appendChild(col1);
-//         row.appendChild(col2);
-//         row.appendChild(col3);
-//         row.appendChild(col4);
-    
-
-//         mytable.appendChild(row);
-//     }
-// }
-
-// // Wait for DOM to load before running fetchData
-// document.addEventListener("DOMContentLoaded", fetchData);
 
 let data = [];
 
@@ -84,7 +39,7 @@ function renderTable(dataToRender) {
             <td>${item.current_price}</td>
             <td>${item.total_volume}</td>
             <td>${item.price_change_percentage_24h}</td>
-            <td>${item.market_cap}</td>
+            <td>Mkr Cap: ${item.market_cap}</td>
         `;
         tableBody.appendChild(row);
     });
